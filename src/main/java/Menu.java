@@ -93,11 +93,13 @@ public class Menu {
                    long deleteId = scanner.nextInt(); //wywołaj metodę usuń w SlipDao z parametrem ID
 
                     if (adviceService.deleteID(deleteId)) {
-                        System.out.println("Cytat został usunięty.");
+                        System.out.println("Cytat został usunięty."); //dalej widać po ponownym wyświetleniu cytatów
                     } else {
                         System.out.println("nie można usunąć cytatu");
                         break;
                     }
+
+
 
                 }
 
